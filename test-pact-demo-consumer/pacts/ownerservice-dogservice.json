@@ -1,0 +1,51 @@
+{
+  "consumer": {
+    "name": "ownerService"
+  },
+  "provider": {
+    "name": "dogService"
+  },
+  "interactions": [
+    {
+      "description": "a request for a dog breed",
+      "providerState": "i have a dog breed",
+      "request": {
+        "method": "GET",
+        "path": "/breeds/Labrador%20Retriever"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Labrador Retriever",
+          "lifeSpan": "10 – 14 years",
+          "temperament": [
+            "Kind",
+            "Outgoing",
+            "Agile",
+            "Gentle",
+            "Intelligent",
+            "Even Tempered",
+            "Trusting"
+          ],
+          "weight": {
+            "male": "29–36 kg",
+            "female": " 25–32 kg"
+          },
+          "colours": [
+            "Black",
+            "Chocolate",
+            "Yellow"
+          ]
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
