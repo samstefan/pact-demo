@@ -26,7 +26,9 @@ module.exports = function({ app }) {
       const response = Object.assign({}, owners[owner]);
       response.dogBreed = dogBreed;
 
-      res.json(response);
+      return res.json(response);
     }
+
+    res.json({ error: "Could not find owner" });
   });
 };

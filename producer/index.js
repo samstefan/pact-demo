@@ -5,7 +5,7 @@ const expressConfig = require("./lib/express");
 const api = require("./api");
 
 const app = Express();
-const logger = bunyan.createLogger({ name: "dogsService" });
+const logger = bunyan.createLogger({ name: "dogService" });
 
 // Configurer Express
 logger.info("✅  Configuring Express.");
